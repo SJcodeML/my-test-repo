@@ -5,8 +5,8 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 const answer = await inquirer.prompt([
-    { message : "Enter your First number " , type : "number" , name: "firstNumber"},
-    {message :"Enter your second number " ,  type : "number" ,  name : "secondNumber"},
+    { message : "Enter your 1st number " , type : "number" , name: "firstNumber"},
+    {message :"Enter your 2nd number " ,  type : "number" ,  name : "secondNumber"},
     {message :"Choose one operator  for an operation" , 
     type:"list" ,
     name:"operator" ,
@@ -61,4 +61,6 @@ else if (answer.operator === "Division") {
 else {
     console.log("Enter a valid operator");
 }
+
+
  
